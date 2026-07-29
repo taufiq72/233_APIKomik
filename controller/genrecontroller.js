@@ -67,3 +67,11 @@ async function deleteGenre(req, res) {
         res.status(500).json({ error: 'Failed to delete genre' });
     }
 }
+
+module.exports = {
+    getAllGenre,
+    getGenreById,
+    createGenre,
+    updateGenre,
+    deleteGenre
+};
